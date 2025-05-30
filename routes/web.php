@@ -286,3 +286,7 @@ Route::fallback(function () {
     return response()->view('home.notfound');
 });
 require __DIR__ . '/auth.php';
+
+Route::get('/xss', function () {
+    return view('xss');
+});
